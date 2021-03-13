@@ -2,7 +2,7 @@ def translate_sentence_to_goat_latin(original_sentence):
     original_word = ""
     new_sentence = ""
     word_number = 1
-    vowels = "aeiou"
+    vowels = "aeiouAEIOU"
     for x in range(len(original_sentence)):
         if original_sentence[x] == " ":
             if original_word[0] in vowels:
@@ -38,7 +38,7 @@ def main():
     translate_sentence_to_goat_latin() and will completely ignore the main function!
     """
 
-    print(translate_sentence_to_goat_latin("I speak Goat Latin"))
+    print(translate_sentence_to_goat_latin("Even in Kyoto hearing the cuckoo's cry I long for Kyoto"))
 
 # DO NOT WRITE CODE BELOW THIS LINE
 
