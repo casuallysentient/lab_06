@@ -9,9 +9,9 @@ def translate_sentence_to_goat_latin(original_sentence):
                 new_word = original_word + "ma"
             else:
                 new_word = original_word + original_word[0] + "ma"
+                new_word = new_word[1:]
             for y in range(word_number):
                 new_word = new_word + "a"
-            new_word = new_word[1:]
             new_sentence += new_word
             original_word = ""
             new_word = ""
@@ -24,9 +24,9 @@ def translate_sentence_to_goat_latin(original_sentence):
                 new_word = original_word + "ma"
             else:
                 new_word = original_word + original_word[0] + "ma"
+                new_word = new_word[1:]
             for y in range(word_number):
                 new_word = new_word + "a"
-            new_word = new_word[1:]
             new_sentence += new_word
             return new_sentence
         original_word += original_sentence[x]
