@@ -1,5 +1,12 @@
+import random
+
+
 def get_damage_multiplier(pokemon_level, pokemon_speed):
-    pass
+    if random.randrange(255) < (pokemon_speed / 2):
+        multiplier = (2 * pokemon_level + 5) / (pokemon_level + 5)
+        return multiplier
+    else:
+        return 1
 
 
 def main():
@@ -8,10 +15,10 @@ def main():
     get_damage_multiplier() and will completely ignore the main function!
     """
 
-    pokemon_name = "Chandelure"
-    pokemon_move_name = "Shadow Ball"
-    pokemon_level = 100
-    pokemon_speed = 80
+    pokemon_name = input("What is your Pokémon's name?\n")
+    pokemon_move_name = input("What attack should " + pokemon_name + " use?\n")
+    pokemon_level = int(input("What level is " + pokemon_name + "?\n"))
+    pokemon_speed = int(input("What speed is " + pokemon_name + "?\n"))
 
     number_of_tests = 20
 
