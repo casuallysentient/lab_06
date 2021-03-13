@@ -1,4 +1,4 @@
-def get_decoded_string_by_skip(corpus, step):
+def get_decoded_string_by_skip(corpus, step = 1):
     decoded_string = ""
     for x in range(step - 1, len(corpus), step):
         decoded_string = decoded_string + corpus[x]
